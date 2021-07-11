@@ -1,2 +1,8 @@
 # venv
 venv
+
+# pycache
+*.pyc
+
+# DB
+*db.sqlite3
