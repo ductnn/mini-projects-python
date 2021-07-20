@@ -1,0 +1,7 @@
+*.pyc
+*db.sqlite3
+*.DS_Store
+*.git/
+**/migrations
+__pycache__
+Dockerfile
