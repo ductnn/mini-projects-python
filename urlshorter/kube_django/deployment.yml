@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: urlshorter-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: urlshorter-app
+  template:
+    metadata:
+      labels:
+        app: urlshorter-app
+    spec:
+      containers:
+      - name: urlshorter-app
+        image: ductn4/urlshorter:1.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
